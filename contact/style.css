@@ -42,46 +42,42 @@
       
   }
 
-
-
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
+    .navbar>.container{
+      justify-content:right !important;
+  
+    }
+    .navbar-toggler{
+      margin-left: auto;
+  
+    }
+    .container{
+        width: 100% !important;
+        /* margin-left: 10px !important;
+        margin-right: 10px !important; */
+      }
     .navBarLogo{
-        font-size: 18px;
-        margin-left: 3vw;
-        padding: 15px 0;
+      font-size: 12px !important;
+      padding: 20px 0;
     }
     .nav-link{
-        font-size: 16px;
-        width: 100vw;
-        
+      font-size: 10px;
+      width: 100vw;   
+      margin: 0 !important;
+      padding: 15px !important;
     }
     .navbar-nav{
-        border-top: solid rgb(98,99,101, .7);
-        border-width: 1px;
+      border-top: solid rgb(98,99,101, .7);
+      border-width: 1px;
     }
     #navService, #navHome, #navAbout, #navContact{
-        padding: 20px 25px;
+      padding: 20px 25px;
     }
     .mt-2, .my-2 {
-        margin-top: 0px !important;
+      margin-top: 0px !important;
     }
   }
-
-  @media only screen and (min-width: 601px)and (max-width: 1000px) {
-    .navBarLogo{
-        font-size: 24px;
-    }
-    .nav-link{
-        font-size: 16px;
-        /* width: 100vw; */
-        text-align: center;
-        margin: 0px 3px;
-        padding: 30px;
-    }
-    .mb-2, .my-2 {
-        margin-bottom: 0px!important;
-    }
-  }
+  
 .container{
     width: 85% !important;
 }

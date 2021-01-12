@@ -1,85 +1,103 @@
 /* body{
-    font-family: 'Poppins', sans-serif;
-  } */
-  
-  .navBarLogo{
-      font-weight: 400;
-      font-size: 34px;
-      color: rgb(66, 66, 66);
-  }
-  
-  .navBarLogo:hover{
-      color: #141414;
-  }
-  
-  .nav-link{
-      font-weight: 600;
-      font-size: 16px;
-      padding: 25px 10px !important;
-      margin: 0px 5px !important;
-      border: transparent solid 3px;
-      -webkit-transition: color .3s, border .3s; 
-      transition: linear color .3s, ease-in border .3s;
-  }
-  .nav-link:hover{
-      border-bottom: #099BCA solid 3px;
-      color: #099BCA !important;
-      font-weight: 600;
-  }
-  
-  a:link{
-      text-decoration: none;
-  }
-  
-  .navbar{
-      padding: 0px !important;
-  }
-  .bg-light{
-      background-color: #F7F8F9 !important;
-  }
-  .navbar-toggler{
-      border: none;
-      
-  }
+  font-family: 'Poppins', sans-serif !important;
+} */
+
+.navBarLogo{
+    font-weight: 400;
+    font-size: 34px;
+    color: rgb(66, 66, 66);
+    
+}
+
+.navBarLogo:hover{
+  color: rgb(66, 66, 66);
+}
+
+.nav-link{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 25px 10px !important;
+    margin: 0px 5px !important;
+    border: transparent solid 3px;
+    -webkit-transition: color .3s, border .3s; 
+    transition: linear color .3s, ease-in border .3s;
+}
+
+.nav-link:hover{
+    border-bottom: #099BCA solid 3px;
+    color: #099BCA !important;
+    font-weight: 600;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.navbar{
+    padding: 0px !important;
+}
+.bg-light{
+    background-color: #F7F8F9 !important;
+}
+.navbar-toggler{
+    border: none;
+}
+
+
 
 @media only screen and (max-width: 600px) {
-    .navBarLogo{
-        font-size: 18px;
-        margin-left: 3vw;
-        padding: 15px 0;
-    }
-    .nav-link{
-        font-size: 16px;
-        width: 100vw;
-        
-    }
-    .navbar-nav{
-        border-top: solid rgb(98,99,101, .7);
-        border-width: 1px;
-    }
-    #navService, #navHome, #navAbout, #navContact{
-        padding: 20px 25px;
-    }
-    .mt-2, .my-2 {
-        margin-top: 0px !important;
-    }
-  }
+  .navbar>.container{
+    justify-content:right !important;
 
-  @media only screen and (min-width: 601px)and (max-width: 1000px) {
-    .navBarLogo{
-        font-size: 24px;
-    }
-    .nav-link{
-        font-size: 16px;
-        /* width: 100vw; */
-        text-align: center;
-        margin: 0px 3px;
-        padding: 30px;
-    }
-    .mb-2, .my-2 {
-        margin-bottom: 0px!important;
-    }
   }
+  .navbar-toggler{
+    margin-left: auto;
+
+  }
+  .container{
+    width: 100% !important;
+    /* margin-left: 10px !important;
+    margin-right: 10px !important; */
+  }
+  .navBarLogo{
+    font-size: 12px !important;
+    padding: 20px 0;
+  }
+  .nav-link{
+    font-size: 10px;
+    width: 100vw;   
+    margin: 0 !important;
+    padding: 15px !important;
+  }
+  .navbar-nav{
+    border-top: solid rgb(98,99,101, .7);
+    border-width: 1px;
+  }
+  #navService, #navHome, #navAbout, #navContact{
+    padding: 20px 25px;
+  }
+  .mt-2, .my-2 {
+    margin-top: 0px !important;
+  }
+  .serviceListTitle{
+      text-align: center;
+  }
+}
+
+@media only screen and (min-width: 601px)and (max-width: 1000px) {
+  .navBarLogo{
+    font-size: 20px !important;
+}
+  .nav-link{
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 3px;
+    padding: 30px;
+}
+  .mb-2, .my-2 {
+    margin-bottom: 0px !important;
+  }
+}
 .container{
     width: 85% !important;
 }
@@ -101,7 +119,7 @@
 .whatWeDo{
     position: relative;
     text-align: center;
-    top: 400px;
+    top: 80%;
     font-weight: 400;
     font-size: 48px;
     color: rgba(255, 255, 255, 0.9);
@@ -210,14 +228,15 @@
       }
     .serviceListTitle{
         margin-top: 20px;
-        font-size: 28px;
+        font-size: 20px;
         line-height: 34px;
     }
     .serviceListText{
         margin-bottom: 36px;
     }
     .serviceListImage{
-        width: 100%;
+        width: 75%;
+        margin: 0 50px;
     }
     .serviceRow2{
         margin-top: 0px;
