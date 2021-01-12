@@ -1,0 +1,204 @@
+/* body{
+    font-family: 'Poppins', sans-serif;
+  } */
+  
+  .navBarLogo{
+      font-weight: 400;
+      font-size: 34px;
+      color: rgb(66, 66, 66);
+  }
+  
+  .navBarLogo:hover{
+      color: #141414;
+  }
+  
+  .nav-link{
+      font-weight: 600;
+      font-size: 16px;
+      padding: 25px 10px !important;
+      margin: 0px 5px !important;
+      border: transparent solid 3px;
+      -webkit-transition: color .3s, border .3s; 
+      transition: linear color .3s, ease-in border .3s;
+  }
+  
+  .nav-link:hover{
+      border-bottom: #099BCA solid 3px;
+      color: #099BCA !important;
+      font-weight: 600;
+  }
+  
+  a:link{
+      text-decoration: none;
+  }
+  
+  .navbar{
+      padding: 0px !important;
+  }
+  .bg-light{
+      background-color: #F7F8F9 !important;
+  }
+  .navbar-toggler{
+      border: none;
+      
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    .navBarLogo{
+        font-size: 18px;
+        margin-left: 3vw;
+        padding: 15px 0;
+    }
+    .nav-link{
+        font-size: 16px;
+        width: 100vw;
+        
+    }
+    .navbar-nav{
+        border-top: solid rgb(98,99,101, .7);
+        border-width: 1px;
+    }
+    #navService, #navHome, #navAbout, #navContact{
+        padding: 20px 25px;
+    }
+    .mt-2, .my-2 {
+        margin-top: 0px !important;
+    }
+  }
+
+  @media only screen and (min-width: 601px)and (max-width: 1000px) {
+    .navBarLogo{
+        font-size: 24px;
+    }
+    .nav-link{
+        font-size: 16px;
+        /* width: 100vw; */
+        text-align: center;
+        margin: 0px 3px;
+        padding: 30px;
+    }
+    .mb-2, .my-2 {
+        margin-bottom: 0px!important;
+    }
+  }
+
+.container{
+    width: 85% !important;
+}
+.about{
+    color: #20242B;
+    position:absolute; 
+    width: 100%;
+}
+.aboutBanner{
+    background: url("../resources/images/astronaut_about-min.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 33vw;
+    position: relative;
+    top: 74px; 
+}
+.whoWeAre{
+    position: relative;
+    text-align: center;
+    top: 390px;
+    font-weight: 400;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.aboutContent{
+    position: relative;
+    top: 125px;
+    height: 50vh;
+}
+.aboutTitle{
+    font-style: normal;
+    font-weight: lighter; 
+    font-size: 58px;
+    color: #099BCA;
+    text-align: center;
+}
+.aboutText{
+    margin-top: 25px;
+    font-size: 16px;
+    color: #626365;
+    line-height: 1.4;
+}
+@media only screen and (max-width: 349px) {
+    .aboutBanner{
+      background: url("../resources/images/astronaut_about_small-min.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 75vw;
+      top: 35px; 
+    }
+    .whoWeAre{
+        top: 55vw;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    .aboutContent{
+        top: 60px;
+        height: 50vh;
+    }
+    .aboutTitle{
+        font-size: 28px;
+    }
+    
+    
+  }
+  @media only screen and (min-width: 350px) and (max-width: 568px) {
+    .aboutBanner{
+        background: url("/resources/images/astronaut_about_small-min.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 75vw;
+        top: 35px; 
+      }
+      .whoWeAre{
+        top: 55vw;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+      .aboutContent{
+          top: 60px;
+          height: 50vh;
+      }
+      .aboutTitle{
+          font-size: 28px;
+      }
+  }
+  
+  @media only screen and (min-width: 569px)and (max-width: 1000px) {
+    .aboutBanner{
+        background: url("/resources/images/astronaut_about_small-min.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 75vw;
+        top: 35px; 
+      }
+      .whoWeAre{
+        top: 65vw;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+      .aboutContent{
+          top: 60px;
+          height: 50vh;
+      }
+      .aboutTitle{
+          font-size: 28px;
+      }
+    
+  }
+  .sticky-bottom{
+    padding: 20px;
+    margin-top: 250px;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    background-color: #F7F8F9;
+    background-color: transparent;
+    width: 100%;
+}

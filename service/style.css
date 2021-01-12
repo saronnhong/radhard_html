@@ -1,0 +1,264 @@
+/* body{
+    font-family: 'Poppins', sans-serif;
+  } */
+  
+  .navBarLogo{
+      font-weight: 400;
+      font-size: 34px;
+      color: rgb(66, 66, 66);
+  }
+  
+  .navBarLogo:hover{
+      color: #141414;
+  }
+  
+  .nav-link{
+      font-weight: 600;
+      font-size: 16px;
+      padding: 25px 10px !important;
+      margin: 0px 5px !important;
+      border: transparent solid 3px;
+      -webkit-transition: color .3s, border .3s; 
+      transition: linear color .3s, ease-in border .3s;
+  }
+  .nav-link:hover{
+      border-bottom: #099BCA solid 3px;
+      color: #099BCA !important;
+      font-weight: 600;
+  }
+  
+  a:link{
+      text-decoration: none;
+  }
+  
+  .navbar{
+      padding: 0px !important;
+  }
+  .bg-light{
+      background-color: #F7F8F9 !important;
+  }
+  .navbar-toggler{
+      border: none;
+      
+  }
+
+@media only screen and (max-width: 600px) {
+    .navBarLogo{
+        font-size: 18px;
+        margin-left: 3vw;
+        padding: 15px 0;
+    }
+    .nav-link{
+        font-size: 16px;
+        width: 100vw;
+        
+    }
+    .navbar-nav{
+        border-top: solid rgb(98,99,101, .7);
+        border-width: 1px;
+    }
+    #navService, #navHome, #navAbout, #navContact{
+        padding: 20px 25px;
+    }
+    .mt-2, .my-2 {
+        margin-top: 0px !important;
+    }
+  }
+
+  @media only screen and (min-width: 601px)and (max-width: 1000px) {
+    .navBarLogo{
+        font-size: 24px;
+    }
+    .nav-link{
+        font-size: 16px;
+        /* width: 100vw; */
+        text-align: center;
+        margin: 0px 3px;
+        padding: 30px;
+    }
+    .mb-2, .my-2 {
+        margin-bottom: 0px!important;
+    }
+  }
+.container{
+    width: 85% !important;
+}
+.serviceBanner{
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0.35%, rgba(255, 255, 255, 0) 94.53%), url("/images/satellite-1030779_1600x525crop.jpg"); */
+    background: url("../resources/images/spacex-VBNb52J8Trk-unsplash_crop-min.jpg");
+    background-size: cover;
+    height: 33vw;
+    /* width:100%; */
+    position: relative;
+    /* left:0; */
+    top: 74px; 
+}
+.service{
+  color: #20242B;
+  position:absolute; 
+  width: 100%;
+}
+.whatWeDo{
+    position: relative;
+    text-align: center;
+    top: 400px;
+    font-weight: 400;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.serviceContent{
+    position: relative;
+    top: 125px;
+}
+.serviceTitle{
+    font-style: normal;
+    font-weight: lighter; 
+    font-size: 58px;
+    color: #099BCA;
+    text-align: center;
+    
+  }
+/* .serviceText{
+    margin-top: 25px;
+    font-size: 16px;
+    color: #626365;
+    line-height: 25px;
+} */
+.serviceRow{
+    margin-top: 60px;
+}
+.serviceRow2{
+    margin-top: 40px;
+}
+.serviceListTitle{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 40px;
+}
+.serviceListText{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 18px; */
+    line-height: 25px;
+    
+    margin-top: 10px;
+    font-size: 16px;
+    color: #626365;
+}
+
+.serviceListImage{
+    width: 96%;
+}
+@media only screen and (max-width: 349px) {
+    .serviceBanner{
+      background: url("../resources/images/spacex-VBNb52J8Trk-unsplash_small-min.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 75vw;
+      top: 35px; 
+    }
+    .whatWeDo{
+        top: 55vw;
+        font-size: 28px;
+    }
+    .serviceContent{
+        position: relative;
+        top: 60px;
+    }
+    .serviceTitle{
+        font-size: 28px;
+      }
+    .serviceListTitle{
+        margin-top: 10px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .serviceListText{
+        margin-bottom: 36px;
+    }
+    .serviceListImage{
+        width: 100%;
+    }
+    .serviceRow2{
+        margin-top: 0px;
+    }
+  }
+  @media only screen and (min-width: 350px) and (max-width: 568px) {
+    .serviceBanner{
+        background: url("../resources/images/spacex-VBNb52J8Trk-unsplash_small-min.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 75vw;
+        top: 35px; 
+      }
+      .whatWeDo{
+          top: 55vw;
+          font-size: 28px;
+      }
+      .serviceContent{
+          position: relative;
+          top: 60px;
+      }
+      .serviceTitle{
+          font-size: 28px;
+      }
+    .serviceListTitle{
+        margin-top: 20px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .serviceListText{
+        margin-bottom: 36px;
+    }
+    .serviceListImage{
+        width: 100%;
+    }
+    .serviceRow2{
+        margin-top: 0px;
+    }
+  }
+  
+  @media only screen and (min-width: 569px)and (max-width: 1000px) {
+    .serviceBanner{
+        background: url("../resources/images/spacex-VBNb52J8Trk-unsplash_small-min.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 75vw;
+        top: 35px; 
+    }
+    .whatWeDo{
+        top: 65vw;
+        font-size: 28px;
+    }
+    .serviceContent{
+        position: relative;
+        top: 60px;
+    }
+    .serviceTitle{
+        font-size: 28px;
+    }
+    .serviceListTitle{
+        margin-top: 20px;
+    }
+    .serviceRow2{
+        margin-top: 20px;
+    }
+  }
+
+  .sticky-bottom{
+    padding: 20px;
+    margin-top: 250px;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    background-color: #F7F8F9;
+    background-color: transparent;
+    width: 100%;
+}
+
+
