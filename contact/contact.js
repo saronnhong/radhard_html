@@ -32,13 +32,12 @@ $("#emailSubmit").on("click", function () {
         method: 'POST',
         body: JSON.stringify({
             email: {
-                recipient: 'saronnhong@gmail.com',
-                sender: 'chich20x6@gmail.com',
-                from: 'me',
-                phone: '1234',
-                subject: 'test',
-                text: 'this time its from radhard backend',
-                confirmMsg: 'yes'
+                recipient: 'the.radhard@gmail.com',
+                sender: 'saronnhong@gmail.com',
+                from: $("#emailInput").val(),
+                phone: $("#phoneInput").val(),
+                name: $("#nameInput").val(),
+                text: $("#messageInput").val()
             }
         }),
         headers: { "Content-Type": "application/json" }
@@ -51,6 +50,7 @@ $("#emailSubmit").on("click", function () {
             //     alert("email was not sent!");
             // }
             console.log(res);
+            // console.log($("#nameInput").val());
             alert("done");
         })
 })
