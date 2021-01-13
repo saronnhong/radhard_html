@@ -1,30 +1,5 @@
-// $(document).on("click", ".emailSubmitBtn", function() {
-//     alert("button has been pushed!");
-//     fetch("/send-email", {
-//         method: 'POST',
-//         body: JSON.stringify({
-//             email: {
-//                 recipient: 'the.radhard@gmail.com',
-//                 sender: 'chich20x6@gmail.com',
-//                 from: 'me',
-//                 phone: '1234',
-//                 subject: 'test',
-//                 text: 'hello',
-//                 confirmMsg: 'yes'
-//             }
-//         }),
-//         headers: { "Content-Type": "application/json" }
-//     })
-//         .then(res => {
-//             // if (res) {
-//             //     const { email } = this.state;
-//             //     this.setState({ email: { ...email, confirmMsg: "Email sent.", from: "", phone: "", subject: "", text: "" } })
-//             // } else {
-//             //     alert("email was not sent!");
-//             // }
-//             console.log(res);
-//         })
-// })
+var myModal = document.getElementById('exampleModal');
+
 
 $("#emailSubmit").on("click", function () {
     console.log("email has been sent")
@@ -43,14 +18,14 @@ $("#emailSubmit").on("click", function () {
         headers: { "Content-Type": "application/json" }
     })
         .then(res => {
-            // if (res) {
-            //     const { email } = this.state;
-            //     this.setState({ email: { ...email, confirmMsg: "Email sent.", from: "", phone: "", subject: "", text: "" } })
-            // } else {
-            //     alert("email was not sent!");
-            // }
-            console.log(res);
-            // console.log($("#nameInput").val());
-            alert("done");
+            if (res) {
+                var modal = new bootstrap.Modal(myModal)
+                modal.show();
+            } else {
+                alert("Something went wrong. Email was not sent!");
+            }
         })
 })
+
+
+

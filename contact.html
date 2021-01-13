@@ -61,7 +61,7 @@
                                 <a class="contactDetails"
                                     href="https://www.google.com/maps/place/4980+N+Harbor+Dr,+San+Diego,+CA+92106/"
                                     target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-map-marker-alt"></i> 
+                                    <i class="fas fa-map-marker-alt"></i>
                                     4980 North Harbor Drive #202
                                     <br>
                                     San Diego, CA 92106
@@ -97,7 +97,8 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Message</span>
                                 </div>
-                                <textarea id="messageInput" class="form-control" rows="7" aria-label="With textarea"></textarea>
+                                <textarea id="messageInput" class="form-control" rows="7"
+                                    aria-label="With textarea"></textarea>
                             </div>
                             <button id="emailSubmit" class="btn btn-dark emailSubmitBtn hvr-shadow hvr-sweep-to-right"
                                 type="button">Send
@@ -111,8 +112,25 @@
             </div>
 
         </div>
-
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Alert</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Email has been sent!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./contact/contact.js"></script>
     <script src="https://kit.fontawesome.com/6b33305948.js"></script>
